@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!--  CDN link DaisyUI and Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/dcb6fa8a47.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-lexend{
+                      font-family: "Lexend", sans-serif;
+                        }
+    </style>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+            primary: '#B4F461',
+        },
+      },
+    },
+  }
+</script>
+
+</head>
+
+<body class="font-lexend">
+
+    <header class="lg:sticky top-0 z-50 pb-1 bg-[#ffffffe3]">
+        <section class="lg:w-[1440px] mx-auto">
+
+            <!-- Nav Section Starts -->
+            <nav class=" py-8 bg-[#F9F7F3]">
+              <div class=" navbar bg-base-100 bg-[#F9F7F3] flex lg:flex-row flex-col justify-between  gap-4 lg:gap-0 px-12">
+                  <div class=""> 
+
+                    <button class="btn bg-primary lg:px-12 h-16">
+                      <a class="text-2xl text-[#1C1C1C] font-bold" href="faq.html">Blog</a>
+                    </button>
+
+                    <button class="hidden btn bg-primary lg:px-12 h-16">
+                      <a class="text-2xl text-[#1C1C1C] font-bold" href="index.html">Home</a>
+                    </button>            
+
+                  </div>
+
+                  <div class=" flex justify-center items-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="text-xl lg:text-3xl font-bold ml-3">Donate Bangladesh</h1>
+                  </div>
+
+                  <div class="">
+
+                    <div class="flex justify-center items-center"> 
+                        <img src="./assets/coin.png" alt="">
+                        <p class="ml-3 text-2xl font-bold"><span id="fixed-amount" class="mr-2">5500</span>BDT</p>
+                    </div>
+
+                  </div>
+                </div>
+          </nav>
+
+          <!-- Nav Section End -->
+
+             <!-- tabs for Donation and History -->
+             <div class="flex flex-col lg:flex-row justify-center mb-12 pt-12 gap-10 mx-6">
+              
+              <button id="donation-tab" class="h-16 px-12 rounded-lg text-black text-xl font-bold btn bg-primary">Donation</button>
+
+              <button id="history-tab" class="h-16 px-12 rounded-lg text-[#585858] text-xl font-bold border border-[#B7B7B7]">History</button>
+
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+
+      <section class="lg:w-[1440px] mx-auto px-6 lg:pt-12 mx-6">
+        <div class="grid grid-cols-1 gap-16 mb-24">
+
+          <div class="card lg:card-side bg-base-100 shadow-xl border">
+            <div class="lg:w-[50%]">
+              <figure>
+                <img class="w-[100%] p-6" src="./assets/noakhali.png" alt="Album" />
+              </figure>
+            </div>
+
+            <div class="card-body lg:w-[50%]">
+              <div class="flex justify-center items-center bg-[#F9F7F3] w-36 py-3 text-[#545454] rounded-xl"> 
+                <img class="pl-4" src="./assets/coin.png" alt="">
+                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount" class="mr-2">0</span>BDT</p>
+              </div>
+
+                <h2 class="card-title mt-4 mb-6 text-[#111111] text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p class="text-[#585858]">The flood situation in Noakhali has worsened due to continuous rain and upstream water, leading many people to seek shelters.  Pause Mute Remaining Time -10:13 Close PlayerUnibots.com The flood situation further deteriorated in the district town of Maizdi and in the Sadar upazila. Meanwhile, residents have reported that relief is not properly reaching many remote areas of the district.</p>
+                
+
+                <input type="number" id="income" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
+
+                <div>
+                  <button class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="card lg:card-side bg-base-100 shadow-xl border">
+            <div class="lg:w-[50%]">
+              <figure>
+                <img class="w-[100%] p-6" src="./assets/feni.png" alt="Album" />
+              </figure>
+            </div>
+
+            <div class="card-body lg:w-[50%]">
+              <div class="flex justify-center items-center bg-[#F9F7F3] w-36 py-3 text-[#545454] rounded-xl"> 
+                <img class="pl-4" src="./assets/coin.png" alt="">
+                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount" class="mr-2">0</span>BDT</p>
+              </div>
+
+                <h2 class="card-title mt-4 mb-6 text-[#111111] text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+                <p class="text-[#585858]">The death toll in the recent flash floods in Feni has risen to 23, according to district administration sources as of Friday night. The floods, caused by the upwelling of water from India and heavy rains, have submerged six upazilas, leaving hundreds of thousands of people stranded. The first fatality was reported on the night of August 24, when locals discovered a body floating in knee-deep water in front of Sonali Bank on Mizan Road in Feni.</p>
+                
+
+                <input type="number" id="income" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
+
+                <div>
+                  <button class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="card lg:card-side bg-base-100 shadow-xl border">
+            <div class="lg:w-[50%]">
+              <figure>
+                <img class="w-[100%] p-6" src="./assets/quota-protest.png" alt="Album" />
+              </figure>
+            </div>
+
+            <div class="card-body lg:w-[50%]">
+              <div class="flex justify-center items-center bg-[#F9F7F3] w-36 py-3 text-[#545454] rounded-xl"> 
+                <img class="pl-4" src="./assets/coin.png" alt="">
+                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount" class="mr-2">0</span>BDT</p>
+              </div>
+
+                <h2 class="card-title mt-4 mb-6 text-[#111111] text-2xl font-bold">Aid for Injured in the Quota Movement</h2>
+                <p class="text-[#585858]">The quota reform protest started in 2018 but was abruptly dissolved through harsh and cunning methods. Now, it has resurfaced due to the indecisiveness of the government. The movement has been joined by numerous students across the country both from private and public universities, indicating that the protest is close to people's hearts, and they find the demands logical.In the past couple of years, no other protest has been able to mobilise so many students.</p>
+                
+
+                <input type="number" id="income" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
+
+                <div>
+                  <button class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
+                </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+    </main>
+   
+</body>
+</html>
