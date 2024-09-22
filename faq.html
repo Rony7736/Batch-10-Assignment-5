@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!--  CDN link DaisyUI and Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/dcb6fa8a47.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-lexend{
+                      font-family: "Lexend", sans-serif;
+                        }
+    </style>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+            primary: '#B4F461',
+        },
+      },
+    },
+  }
+</script>
+
+</head>
+
+<body class="font-lexend">
+
+    <header class="lg:sticky top-0 z-50 pb-1 bg-[#ffffffe3]">
+        <section class="lg:w-[1440px] mx-auto">
+
+            <!-- Nav Section Starts -->
+            <nav class=" py-6 bg-[#F9F7F3]">
+              <div class=" navbar bg-base-100 bg-[#F9F7F3] flex lg:flex-row flex-col justify-between gap-4 lg:gap-0 px-12">
+                  <div class=""> 
+
+                    <button class="hidden btn bg-primary lg:px-12 h-16">
+                      <a class="text-2xl text-[#1C1C1C] font-bold" href="faq.html">Blog</a>
+                    </button>
+
+                    <button class=" btn bg-primary lg:px-12 h-16">
+                      <a class="text-2xl text-[#1C1C1C] font-bold" href="index.html">Home</a>
+                    </button>            
+
+                  </div>
+
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="text-xl lg:text-3xl font-bold ml-3">Donate Bangladesh</h1>
+                  </div>
+
+                  <div class=" ">
+
+                    <div class="flex justify-center items-center"> 
+                        <img src="./assets/coin.png" alt="">
+                        <p class="ml-3 text-2xl font-bold"><span id="fixed-amount" class="mr-2">5500</span>BDT</p>
+                    </div>
+
+                  </div>
+                </div>
+          </nav>
+
+          <!-- Nav Section End -->
+        </section>
+    </header>
+
+    <main>
+
+      <section class="lg:w-[1440px] mx-auto px-6 lg:pt-12">
+
+          <div class="w-[95%] mx-auto mb-12">
+            <h1 class="text-2xl lg:text-4xl font-bold mb-10 mt-10">Important FAQ</h1>
+
+            <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. In the DOM specification, the term "document" is used in the broad sense - increasingly, XML is being used as a way of representing many different kinds of information that may be stored in diverse systems, and much of this would traditionally be seen as data rather than as documents. Nevertheless, XML presents this data as documents, and the DOM may be used to manage this data.</p>
+                </div>
+              </div>
+    
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+                <div class="collapse-content">
+                  <p>Selecting DOM (Document Object Model) elements is a fundamental aspect of web development with JavaScript. It allows developers to interact with and manipulate elements on a webpage dynamically. Proper selection of elements is crucial for tasks such as updating content, adding event listeners, or modifying styles. <br>
+
+                    Below are the approaches to select DOM elements in JavaScript: <br>
+                    document.getElementById <br>
+                    document.getElementsByClassName <br>
+                    document.getElementsByTagName <br>
+                </p>
+                </div>
+              </div>
+    
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful ?</div>
+                <div class="collapse-content">
+                  <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM ?</div>
+                <div class="collapse-content">
+                  <p>Manipulating Element Attributes: <br>
+                    The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
+                </div>
+              </div>
+
+          </div>
+
+      </section>
+    </main>
+   
+</body>
+</html>
