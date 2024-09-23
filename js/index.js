@@ -1,5 +1,7 @@
 
-
+    const headingNoakhali = document.getElementById('heading-noakhali').innerText
+    const headingFeni = document.getElementById('heading-feni').innerText
+    const quotaMovement = document.getElementById('quota-movement').innerText
 // calculate Donate Amount
 
 document.getElementById('btn-donate-1').addEventListener('click', function(event){
@@ -25,6 +27,21 @@ document.getElementById('btn-donate-1').addEventListener('click', function(event
     document.getElementById('fixed-amount-1').innerText = totalDonate
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
+
+
+    // history add 
+
+    const historyItem = document.createElement('div')
+    historyItem.className = ("bg-white p-3 rounded-md border pl-8 mb-4")
+    
+    historyItem.innerHTML = `  
+        <p class="text-2xl font-bold text-black py-3">${input1} ${headingNoakhali}</p>        
+        <p class="text-lg text-gray-500 py-3">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toTimeString()}</p>    
+    `
+    const historyList = document.getElementById('history-list')
+
+    historyList.insertBefore( historyItem, historyList.firstChild)
+    
 })
 
 document.getElementById('btn-donate-2').addEventListener('click', function(event){
@@ -51,6 +68,19 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
     document.getElementById('fixed-amount-2').innerText = totalDonate
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
+
+     // history add 
+
+     const historyItem = document.createElement('div')
+     historyItem.className = ("bg-white p-3 rounded-md border pl-8 mb-4")
+     
+     historyItem.innerHTML = `  
+         <p class="text-2xl font-bold text-black py-3">${input2} ${headingFeni}</p>        
+         <p class="text-lg text-gray-500 py-3">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toTimeString()}</p>    
+     `
+     const historyList = document.getElementById('history-list')
+ 
+     historyList.insertBefore( historyItem, historyList.firstChild)
     
 })
 
@@ -77,6 +107,19 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
     document.getElementById('fixed-amount-3').innerText = totalDonate
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
+
+    // history add 
+
+    const historyItem = document.createElement('div')
+    historyItem.className = ("bg-white p-3 rounded-md border pl-8 mb-4")
+    
+    historyItem.innerHTML = `  
+        <p class="text-2xl font-bold text-black py-3">${input3} Taka is Donated for ${quotaMovement}, Bangladesh</p>        
+        <p class="text-lg text-gray-500 py-3">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toTimeString()}</p>    
+    `
+    const historyList = document.getElementById('history-list')
+
+    historyList.insertBefore( historyItem, historyList.firstChild)
 })
 
 
@@ -88,7 +131,7 @@ const donationTab = document.getElementById('donation-tab')
 const donationForm = document.getElementById('donation-form')
 const historySection = document.getElementById('history-section')
 
-document.getElementById('history-tab').addEventListener('click', function(){
+historyTab.addEventListener('click', function(){
     historyTab.classList.add('text-black', 'bg-[#B4F461]')
     historyTab.classList.remove('border')
 
@@ -99,12 +142,14 @@ document.getElementById('history-tab').addEventListener('click', function(){
 
 })
 
-document.getElementById('donation-tab').addEventListener('click', function(){
+donationTab.addEventListener('click', function(){
     donationTab.classList.add('text-black', 'bg-primary')
     donationTab.classList.remove('border')
 
+    historyTab.classList.add('border')
     historyTab.classList.remove('text-black', 'bg-[#B4F461]')
     
     donationForm.classList.remove('hidden')
+    historySection.classList.add('hidden')
 
 })
