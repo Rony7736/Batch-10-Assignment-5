@@ -15,8 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/dcb6fa8a47.js" crossorigin="anonymous"></script>
 
     <style>
         .font-lexend{
@@ -78,11 +76,11 @@
           <!-- Nav Section End -->
 
              <!-- tabs for Donation and History -->
-             <div class="flex flex-col lg:flex-row justify-center mb-12 pt-12 gap-10 mx-6">
+             <div class="flex flex-col lg:flex-row justify-center pb-12 pt-12 gap-10 shadow-lg">
               
               <button id="donation-tab" class="h-16 px-12 rounded-lg text-black text-xl font-bold btn bg-primary">Donation</button>
 
-              <button id="history-tab" class="h-16 px-12 rounded-lg text-[#585858] text-xl font-bold border border-[#B7B7B7]">History</button>
+              <button id="history-tab" class="h-16 px-12 rounded-lg text-[#585858] text-xl font-bold border bg-white border-[#B7B7B7]">History</button>
 
             </div>
 
@@ -91,7 +89,7 @@
 
     <main>
 
-      <section class="lg:w-[1440px] mx-auto px-6 lg:pt-12 mx-6">
+      <section class="lg:w-[1440px] mx-auto px-6 lg:pt-12">
         <div class="grid grid-cols-1 gap-16 mb-24">
 
           <div class="card lg:card-side bg-base-100 shadow-xl border">
@@ -104,17 +102,17 @@
             <div class="card-body lg:w-[50%]">
               <div class="flex justify-center items-center bg-[#F9F7F3] w-36 py-3 text-[#545454] rounded-xl"> 
                 <img class="pl-4" src="./assets/coin.png" alt="">
-                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount" class="mr-2">0</span>BDT</p>
+                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount-1" class="mr-2">0</span>BDT</p>
               </div>
 
                 <h2 class="card-title mt-4 mb-6 text-[#111111] text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="text-[#585858]">The flood situation in Noakhali has worsened due to continuous rain and upstream water, leading many people to seek shelters.  Pause Mute Remaining Time -10:13 Close PlayerUnibots.com The flood situation further deteriorated in the district town of Maizdi and in the Sadar upazila. Meanwhile, residents have reported that relief is not properly reaching many remote areas of the district.</p>
                 
 
-                <input type="number" id="income" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
+                <input type="text" id="input-1" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
 
                 <div>
-                  <button class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
+                  <button id="btn-donate-1" class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
                 </div>
 
             </div>
@@ -131,17 +129,17 @@
             <div class="card-body lg:w-[50%]">
               <div class="flex justify-center items-center bg-[#F9F7F3] w-36 py-3 text-[#545454] rounded-xl"> 
                 <img class="pl-4" src="./assets/coin.png" alt="">
-                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount" class="mr-2">0</span>BDT</p>
+                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount-2" class="mr-2">0</span>BDT</p>
               </div>
 
                 <h2 class="card-title mt-4 mb-6 text-[#111111] text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="text-[#585858]">The death toll in the recent flash floods in Feni has risen to 23, according to district administration sources as of Friday night. The floods, caused by the upwelling of water from India and heavy rains, have submerged six upazilas, leaving hundreds of thousands of people stranded. The first fatality was reported on the night of August 24, when locals discovered a body floating in knee-deep water in front of Sonali Bank on Mizan Road in Feni.</p>
                 
 
-                <input type="number" id="income" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
+                <input type="text" id="input-2" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
 
                 <div>
-                  <button class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
+                  <button id="btn-donate-2" class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
                 </div>
 
             </div>
@@ -158,17 +156,17 @@
             <div class="card-body lg:w-[50%]">
               <div class="flex justify-center items-center bg-[#F9F7F3] w-36 py-3 text-[#545454] rounded-xl"> 
                 <img class="pl-4" src="./assets/coin.png" alt="">
-                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount" class="mr-2">0</span>BDT</p>
+                <p class="ml-3 text-xl font-semibold"><span id="fixed-amount-3" class="mr-2">0</span>BDT</p>
               </div>
 
                 <h2 class="card-title mt-4 mb-6 text-[#111111] text-2xl font-bold">Aid for Injured in the Quota Movement</h2>
                 <p class="text-[#585858]">The quota reform protest started in 2018 but was abruptly dissolved through harsh and cunning methods. Now, it has resurfaced due to the indecisiveness of the government. The movement has been joined by numerous students across the country both from private and public universities, indicating that the protest is close to people's hearts, and they find the demands logical.In the past couple of years, no other protest has been able to mobilise so many students.</p>
                 
 
-                <input type="number" id="income" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
+                <input type="text" id="input-3" class="w-full border border-gray-300 px-3 py-4 mb-4 rounded-xl" placeholder="Write Donation Amount">
 
                 <div>
-                  <button class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
+                  <button id="btn-donate-3" class="btn bg-primary h-16 w-full rounded-lg text-black text-xl font-bold">Donate Now</button>
                 </div>
 
             </div>
@@ -178,6 +176,7 @@
         </div>
       </section>
     </main>
-   
+   <script src="./js/index.js"></script>
+   <script src="./js/utilities.js"></script>
 </body>
 </html>
