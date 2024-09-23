@@ -3,7 +3,6 @@
 // calculate Donate Amount
 
 document.getElementById('btn-donate-1').addEventListener('click', function(event){
-    
 
     const input1 = getInputFieldValueById('input-1')
     const fixedValue = getFixedAmountValueById('fixed-amount-1') 
@@ -53,7 +52,6 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
     
-    
 })
 
 document.getElementById('btn-donate-3').addEventListener('click', function(event){
@@ -81,3 +79,32 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
 })
 
+
+
+// history Tab functionality
+
+const historyTab = document.getElementById('history-tab')
+const donationTab = document.getElementById('donation-tab')
+const donationForm = document.getElementById('donation-form')
+const historySection = document.getElementById('history-section')
+
+document.getElementById('history-tab').addEventListener('click', function(){
+    historyTab.classList.add('text-black', 'bg-[#B4F461]')
+    historyTab.classList.remove('border')
+
+    donationTab.classList.remove('text-black', 'bg-primary')
+    
+    donationForm.classList.add('hidden')
+    historySection.classList.remove('hidden')
+
+})
+
+document.getElementById('donation-tab').addEventListener('click', function(){
+    donationTab.classList.add('text-black', 'bg-primary')
+    donationTab.classList.remove('border')
+
+    historyTab.classList.remove('text-black', 'bg-[#B4F461]')
+    
+    donationForm.classList.remove('hidden')
+
+})
