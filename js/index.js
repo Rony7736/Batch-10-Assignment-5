@@ -19,6 +19,9 @@ document.getElementById('btn-donate-1').addEventListener('click', function(event
         return;
     }
 
+    if(input1 > 0 ){
+        alert('Donate Successfull')
+    }
 
     document.getElementById('fixed-amount-1').innerText = totalDonate
 
@@ -42,7 +45,10 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
         return;
     }
 
-
+    if(input2 > 0 ){
+        alert('Donate Successfull')
+    }
+    
     document.getElementById('fixed-amount-2').innerText = totalDonate
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
@@ -66,7 +72,10 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
         return;
     }
 
-
+    if(input3 > 0 ){
+        alert('Donate Successfull')
+    }
+    
     document.getElementById('fixed-amount-3').innerText = totalDonate
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
