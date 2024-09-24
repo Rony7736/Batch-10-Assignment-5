@@ -2,6 +2,9 @@
     const headingNoakhali = document.getElementById('heading-noakhali').innerText
     const headingFeni = document.getElementById('heading-feni').innerText
     const quotaMovement = document.getElementById('quota-movement').innerText
+    const modal = document.getElementById('my_modal_1')
+
+
 // calculate Donate Amount
 
 document.getElementById('btn-donate-1').addEventListener('click', function(event){
@@ -21,7 +24,7 @@ document.getElementById('btn-donate-1').addEventListener('click', function(event
     }
 
     if(input1 > 0 ){
-        alert('Donate Successfull')
+        modal.showModal()
     }
 
     document.getElementById('fixed-amount-1').innerText = totalDonate
@@ -62,7 +65,7 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
     }
 
     if(input2 > 0 ){
-        alert('Donate Successfull')
+        modal.showModal()
     }
     
     document.getElementById('fixed-amount-2').innerText = totalDonate
@@ -101,7 +104,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
     }
 
     if(input3 > 0 ){
-        alert('Donate Successfull')
+        modal.showModal()
     }
     
     document.getElementById('fixed-amount-3').innerText = totalDonate
