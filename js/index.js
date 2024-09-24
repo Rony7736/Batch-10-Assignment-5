@@ -156,6 +156,7 @@ historyTab.addEventListener('click', function(){
     historyTab.classList.add('text-black', 'bg-[#B4F461]')
     historyTab.classList.remove('border')
 
+    donationTab.classList.add('border')
     donationTab.classList.remove('text-black', 'bg-primary')
     
     donationForm.classList.add('hidden')
