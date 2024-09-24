@@ -23,6 +23,11 @@ document.getElementById('btn-donate-1').addEventListener('click', function(event
         return;
     }
 
+    if(totalDonate > fixedAmountNumber ){
+        alert('You Do Not have sufficient Balance')
+        return;
+    }
+
     if(input1 > 0 ){
         modal.showModal()
     }
@@ -30,6 +35,9 @@ document.getElementById('btn-donate-1').addEventListener('click', function(event
     document.getElementById('fixed-amount-1').innerText = totalDonate
 
     document.getElementById('fixed-amount').innerText = totalDonateAmount 
+
+    
+    
 
 
     // history add 
@@ -61,6 +69,11 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
 
     if(input2 <= 0 || isNaN(input2)){
         alert('Invalid Donation Amount')
+        return;
+    }
+
+    if(totalDonate > fixedAmountNumber ){
+        alert('You Do Not have sufficient Balance')
         return;
     }
 
@@ -100,6 +113,11 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
     // Check Validation
     if(input3 <= 0 || isNaN(input3)){
         alert('Invalid Donation Amount')
+        return;
+    }
+
+    if(totalDonate > fixedAmountNumber ){
+        alert('You Do Not have sufficient Balance')
         return;
     }
 
